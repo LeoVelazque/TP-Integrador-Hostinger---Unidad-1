@@ -1,0 +1,561 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");    
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans", sans-serif;
+}
+
+a{
+    font-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+
+/* HEADER */
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+    height: 88px;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    padding: 0 40px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.header-logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.header-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    color: black;
+    gap: 20px;
+}
+
+header .header-nav a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #1d1e20;
+}
+
+header .header-nav a:hover{
+    color: #888889;
+}
+
+header .header-nav a svg{
+    height: 20px;
+}
+
+.header-botones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    color: #1d1e20;
+    gap: 15px;
+    margin-left: auto;
+}
+
+.header-idioma{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: black;
+    border: none;
+    background-color: transparent;
+    gap: 2px;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1d1e20;
+}
+
+.header-idioma:hover{
+    cursor: pointer;
+    color: #888889;
+}
+
+.header-idioma img{
+    height: 20px;
+}
+
+.header-login{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    color: #1d1e20;
+    background-color: transparent;
+    padding: 11px 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.header-login:hover{
+    cursor: pointer;
+    color: #888889;
+    border-color: #888889;
+}
+
+.header-boton-lista{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: #1d1e20;
+    gap: 15px;
+    margin-left: auto;
+    width: 24px;
+    height: auto;
+    cursor: pointer;
+}
+
+.header-boton-lista svg{
+    height: 100%;
+    width: 100%;
+}
+
+
+/*chatbot*/
+
+.chat-bot{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 186px;
+    height: 40px;
+    background-color: #673de6;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    gap: 4px;
+    position: fixed;
+    bottom: 20px;
+    right: 5px;
+}
+
+.chat-bot:hover{
+    background-color: #5025d1;
+}
+
+.chat-bot i{
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    color: #ffffff;
+}
+/*Hero*/
+
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    margin: auto;
+}
+
+.hero-contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+    width: 28%;
+}
+
+.hero-contenido p{
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.hero-contenido span{
+    width: 90%;
+}
+
+.hero-contenido h1{
+    font-size: 36px;
+}
+
+.hero-lista-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+}
+
+.hero-tilde{
+    color: #00b090;
+    width: 5%;
+    height: auto;
+}
+
+.hero-lista-item svg{
+    width: 5%;
+    margin-right: 10px;
+}
+
+.boton-empezar-ya{
+    padding: 11px 47px;
+    background-color: #673de6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton-empezar-ya:hover{
+    background-color: #5025d1;
+}
+
+.hero-garantia{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.hero-garantia svg{
+    height: 16px;
+    width: 16px;
+    margin-right: 10px;
+}
+
+.hero-imagen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+
+.hero-imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/*seccion migracion*/
+
+.seccion-migracion-web{
+    height: auto;
+    background-color: #1f1346;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: 20px;
+    padding: 80px;
+    gap: 32px;
+}
+
+.seccion-migracion-web h2{
+    color: #FFFFFF;
+    font-size: 36px;
+}
+
+.seccion-migracion-web p{
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.migracion-web-tarjetas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tarjeta{
+    width: 25%;
+    height: 80%;
+    background-color: #2f1c6a;
+    padding: 32px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.tarjeta-icono{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: #FFFFFF;
+    border-radius: 8px;
+    background-color: #673de6;
+}
+
+.tarjeta-icono svg{
+    width: 24px;
+    height: 24px;
+}
+
+.boton-empezar{
+    width: 200px;
+    height: 48px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    background-color: #673de6;
+}
+
+.boton-empezar:hover{
+    cursor: pointer;
+    background-color: #5025d1;
+}
+
+/*footer*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f4f5ff;
+}
+
+.footer-logo-y-redes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.footer-logo svg{
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.footer-redes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.footer-redes i{
+    font-size: 30px;
+    color: #1d1e20;
+    cursor: pointer;
+}
+
+.footer-redes i:hover{
+    color: #888889;
+}
+
+.footer-tarjetas-y-politicas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px ;
+    padding: 20px 40px;
+}
+.footer-tarjetas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.footer-tarjetas img{
+    height: 40px;
+    border-radius: 8px;
+}
+
+.footer-tarjetas div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: #6b56e9;
+    cursor: pointer;
+    text-align: center;
+}
+
+.footer-politicas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-politicas span:hover{
+    color: #6b56e9;
+    cursor: pointer;
+}
+
+.footer-copyright{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 40px;
+    font-size: 14px;
+}
+
+.footer-copyright p{
+    width: 70%;
+}
+
+@media screen and (max-width: 1024px) {
+    .header-nav{
+        display: none;
+    }
+    .header-botones{
+        display: none;
+    }
+    .header-boton-lista{
+        display: flex;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: auto;
+    }
+    .hero-contenido{
+        width: 80%;
+        max-width: 540px;
+    }
+    .hero-contenido h1{
+        font-size: 24px;
+    }
+    .hero-imagen{
+        width: 80%;
+    }
+
+    .seccion-migracion-web{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 32px;
+        gap: 16px;
+    }
+    .seccion-migracion-web h2{
+        font-size: 24px;
+    }
+    .migracion-web-tarjetas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+    .tarjeta{
+        width: 80%;
+        max-width: 520px;
+        min-height: 210px;
+        padding: 32px;
+    }
+    .footer-tarjetas-y-politicas{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: start;
+        padding: 10px 10px;
+        gap: 10px; 
+    }   
+    .footer-politicas{
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding: 5px 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .boton-empezar-ya{
+        width: 100%;
+    }
+    .hero-imagen{
+        width: 100%;
+    }
+
+    .footer-logo-y-redes{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        padding: 0 20px;
+    }
+    .footer-redes{
+        width: 100%;
+        justify-content: space-around;
+        padding: 10px 0;;
+    }
+    .footer-tarjetas-y-politicas{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: start;
+        padding: 0 ;
+    }
+    .footer-tarjetas{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        text-align: center;
+        padding: 10px 0;;
+    }
+    .footer-politicas{
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding: 5px 20px;
+    }
+    .footer-copyright{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 20px 20px;
+        gap: 10px;
+    }
+}
