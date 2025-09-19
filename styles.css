@@ -301,14 +301,20 @@ header .header-nav a svg{
 }
 
 .tarjeta{
+    display: flex;
     width: 25%;
-    height: 80%;
+    min-height: 256px;
+    max-height: 280px;
     background-color: #2f1c6a;
     padding: 32px;
+    padding-top: 46px;
     border-radius: 16px;
-    display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: 16px;
+}
+
+.tarjeta-titulo{
+    font-size: 18px;
 }
 
 .tarjeta-icono{
@@ -491,9 +497,6 @@ footer{
     }
     .tarjeta{
         width: 80%;
-        max-width: 520px;
-        min-height: 210px;
-        padding: 32px;
     }
     .footer-tarjetas-y-politicas{
         display: flex;
